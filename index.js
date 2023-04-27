@@ -16,10 +16,7 @@ app.use(
 app.use("/public", express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
-  res.render("index", {
-    msg: "Button1",
-    msg2: "button2"
-  });
+  res.render("_layout");
 });
 
 app.listen(port);
